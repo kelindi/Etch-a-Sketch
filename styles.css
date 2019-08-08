@@ -8,9 +8,7 @@
 
 .sqr{
     background-color:white;
-    height:49.5px;
-    width:49.5px;
-    border-width: 0.25px;
+    border-width: 0.05px;
     border-style: solid;
     border-color: black;
 }
@@ -24,4 +22,32 @@ body{
 
 .sqrActive{
     background-color:black;
+}
+
+button{
+    border-radius: 50px;
+    border: 2px solid #fff;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font: 400 13.3333px Arial;
+    font-size: 18px;
+    border-color:black;
+    background-color: white;
+    width:200px;
+    height:50px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+button:focus{
+    outline:0;
+}
+
+button:hover{
+    color:maroon;
+}
+
+button:active{
+    background-color:#3333;
 }
