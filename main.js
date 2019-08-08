@@ -42,6 +42,6 @@ function createReset(){
 }
 
 function askDimension(){
-    d = prompt("Please enter a grid dimension ex: 16 NOTE: Bigger the number the higher the wait time");
+    d = prompt("Please enter a grid dimension ex: 16 \nNOTE: Bigger the number the higher the wait time");
     return d
 }
