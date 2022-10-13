@@ -1,0 +1,15 @@
+on: [push]
+jobs:
+  run-action:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - id: add_to_estuary
+      uses: olizilla/add-to-estuary@main
+      with:
+        estuary_api_key: ${{ secrets.ESTUARY_API_KEY }}
+        path_to_add: './'
+    
+    - run: echo ${{ steps.add_to_estuary.outputs.url }}
+    # https://dweb.link/ipfs/bafkreihc7sejzq4ab4kygfyjvs4ye7bxyzgfdpzt7caqkizqnzgf6zgogi
